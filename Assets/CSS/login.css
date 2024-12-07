@@ -1,0 +1,195 @@
+/* ======================================================================================================================================================================== */
+/*                                                                          Login ( Normal )                                                                                */
+/* ======================================================================================================================================================================== */
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family:"Karla",system-ui;
+    display:flex;
+    align-items: center;
+    height:100vh;
+    background-image: url(../Graphics/clean-paint-login-side.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+/* ----------------------------------------------------------------------- Login Fluid > Row ----------------------------------------------------------------------- */
+
+
+.login-con-row{
+    justify-content:start;
+    padding-left:20vw;
+}
+
+/* ----------------------------------------------------------------------- Login Fluid > Row > col > Card ----------------------------------------------------------------------- */
+
+.card{
+    background-color:#fbfcfc;
+    color:#1f2937;
+    border:1px solid #d6dbdf;
+    border-radius:10px;
+}
+
+/* ----------------------------------------------------------------------- Login Fluid > Row > col > Card > Brand + Title ----------------------------------------------------------------------- */
+
+
+.login-brand{
+    text-decoration:none;
+    font-family:"Megrim",sans-serif;
+    font-weight:800;
+    font-size:38px;
+    /* color:#05e177; */
+    color:#4169e1;
+}
+
+
+/* ----------------------------------------------------------------------- PHP Login ( Main ) Form > Field Title ----------------------------------------------------------------------- */
+
+.form-field-title{
+    font-size:24px;
+    font-weight:500;
+    color:#2c3e50;
+}
+
+/* ----------------------------------------------------------------------- PHP Login ( Main ) Form > Fields Default Overwrite ----------------------------------------------------------------------- */
+
+.input-group-prepend{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.form-control{
+    border:none;
+    border:1px solid #d6dbdf;
+    background-color:#f7f9f9;
+    padding-top:18px;
+    padding-bottom:18px;
+    padding-left:75px;
+    padding-right:75px;
+}
+
+.form-control:focus{
+    color:#4169e1;
+    font-family:500;
+    border:1px solid #4169e1;
+    background-color:#f4f6f7;
+    box-shadow:none;
+}
+
+.form-check-input:focus{
+    box-shadow:none;
+}
+
+
+/* ----------------------------------------------------------------------- PHP Login ( Main ) Form > Email + Password Error ----------------------------------------------------------------------- */
+
+.form-err{
+    color:#ff6a31;
+}
+
+/* ----------------------------------------------------------------------- PHP Login ( Main ) Form > Fields Icon ----------------------------------------------------------------------- */
+
+.user-icon{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    height:60%;
+    width:10%;
+    padding-left: 5px;
+}
+
+.password-icon{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    height:60%;
+    width: 10%;
+    padding-left: 5px;
+}
+
+#toggle-password-icon{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    right:5%;
+    height:fit-content;
+    width: 25px;
+    cursor: pointer;
+}
+
+#eye-open-icon,
+#eye-close-icon{
+    height:30px;
+    width:30px;
+}
+
+#eye-open-icon{
+    display: none;
+}
+
+
+/* ----------------------------------------------------------------------- PHP Login ( Main ) Form > Let me in + Back Btn  ----------------------------------------------------------------------- */
+
+
+.btn-login{
+    font-size:24px;
+    background-color:#4169e1;
+    color:#fbfcfc;
+}
+
+.btn-login:hover{
+    background-color:#3b60ce;
+    color:#fbfcfc;
+}
+
+.sign-up-link{
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Login <= 1920px  ( Responsive )                                                                                */
+/* ======================================================================================================================================================================== */
+
+@media (max-width:1920px){
+
+    .login-con-row{
+        justify-content:center;
+        padding-left:0;
+    }
+
+}
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Login <= 1440px  ( Responsive )                                                                                */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1440px) {
+
+    body{
+        background-position:right;   
+    }
+    
+}

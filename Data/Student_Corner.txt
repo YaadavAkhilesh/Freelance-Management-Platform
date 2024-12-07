@@ -1,0 +1,211 @@
+----------------------------------- Student Management System -----------------------------------
+
+🔸️Access Specification  : V > Normal User
+                        : U > Logged User
+                        : R > Root/Admin
+                        : * > Open to All
+                        : ? > No one
+
+
+🔷️ Page Setup   : Index.php - *
+                : Nav.php - *
+                : Footer.php - *
+                : Login.php - *
+                : Register.php - *
+                : Connection.php - ?
+                : Dashboard.php - U
+                : AdminDesk.php - R
+                : About.php - *
+
+
+
+🔷️ Modules Setup    : Login
+
+                        -> Security Mechanism
+                        -> Controlled Page Access
+                        -> Fetch and Comapare Operation
+
+                    : Register
+
+                        -> POST Info
+                        -> Parameters Checking , Conditons Satisfy
+                        -> Insert Operation
+
+                    : Dashboard
+
+                        -> Update Profile
+                        -> View Profile
+                        -> Upload Size Limited Files - Specific like PDFs
+                        -> Field
+
+                    : Admin Dashboard
+
+                        -> CRUD Student Profile
+                        -> Create Operation
+                        -> Admin Profile
+
+                    : DB Connection
+
+                        -> Connection Strings
+                        -> Other Common Parameters
+                        -> Coockies + Sessions
+
+                    : Student Views
+
+                        -> Experience About Specific Fields
+                        -> Reviews About Cources
+                        -> Basic Profile Info
+                        -> Sort Field Wise
+
+                    : About US
+
+                        -> About Developers
+                        -> Used Technology and It's Version
+                        -> Main Feature of Website
+
+
+🔶️ Database Setup   : Apache2 , MYSQL
+                    : ST_Corner.DB
+
+                        -> ST_Main.TABLE
+
+                            > st_id
+                            > st_surname
+                            > st_fname
+                            > st_lname
+                            > st_age
+                            > st_email
+                            > st_contact
+                            > st_pass
+
+
+                        -> ST_Edu.TABLE
+
+                            > st_id
+                            > ed_id
+                            > ed_field
+                            > ed_y_S
+
+                        -> ST_data.TABLE
+
+                            > st_id
+                            > st_img
+                            > st_file
+
+
+💠️ Check Security Mechanism
+💠️ Login == 0 | Dashboard == 0 | Register == 1 | Again Register == 0
+💠️ Login == 1 | Dashboard == 1 | Register == 0 | Again Login == 0
+💠️ Use Secure Query Mechanism ( MYSQL )
+💠️ Password Security Mechanism
+💠️ Encoded Input Mechanism
+💠️ Uploaded File Checking Mechanism
+
+🔹️
+
+🔶️ Content Setup :
+
+    🔹️Index.php
+
+        >
+        >
+        >
+        >
+
+    🔹️Student Adda
+
+        > Logged Users Reviews
+        > Post
+        > Basic Profiles
+
+
+
+
+
+
+
+----------------------------------- Student Management System Configuration -----------------------------------
+
+Font    : Euclid Circular A Font Family
+        : Mukta
+        : Didact Gothic
+        : Playwrite Deutschland Grundschrift
+        : Red Hat Text
+
+
+Colorscheme : https://coolors.co/ffc259-802cff-1e0d37-ededed-f5fffa-0d1321
+
+            : #ffc259 - Cream Yellow
+            : #802cff - Cream Purple
+            : #1e0d37 - Purplish Black
+            : #ededed - White Shade
+            : #f5fffa - Main Cream Mint
+            : #0d1321 - Main Black
+
+
+
+
+Creating an effective browse page for your freelancer project management system is crucial for user engagement and navigation. Here are some suggestions for the text and layout of your browse page:
+
+### Browse Page Structure
+
+1. **Header Section**
+   - **Title:** "Explore Opportunities"
+   - **Subtitle:** "Connect with talented freelancers and organizations ready to collaborate on your next project."
+
+2. **Search Bar**
+   - **Placeholder Text:** "Search for freelancers, organizations, or projects..."
+   - **Button:** "Search"
+
+3. **Filter Options**
+   - **Categories:** Dropdowns or checkboxes for filtering by skills, project types, or organization size.
+   - **Location:** Option to filter by geographical location.
+   - **Rating:** Filter by freelancer ratings or organization reviews.
+
+4. **Featured Section**
+   - **Title:** "Featured Freelancers & Organizations"
+   - **Text:** "Discover top-rated freelancers and organizations that stand out in our community."
+   - **Display:** Carousel or grid layout showcasing a few highlighted profiles with images, names, and short descriptions.
+
+5. **Freelancer Section**
+   - **Title:** "Browse Freelancers"
+   - **Text:** "Find skilled freelancers ready to take on your projects."
+   - **Display:** Grid or list view of freelancers with:
+     - Profile Picture
+     - Name
+     - Skills
+     - Rating
+     - Short Bio
+     - "View Profile" Button
+
+6. **Organization Section**
+   - **Title:** "Browse Organizations"
+   - **Text:** "Connect with organizations that are actively seeking freelancers for exciting projects."
+   - **Display:** Similar layout to the freelancer section, showcasing:
+     - Organization Logo
+     - Name
+     - Industry
+     - Rating
+     - Short Description
+     - "View Profile" Button
+
+7. **Call to Action**
+   - **Text:** "Ready to start your journey? Sign up now to connect with freelancers and organizations!"
+   - **Button:** "Join Now"
+
+### Additional Suggestions
+
+- **User Testimonials:** Include a section for testimonials from both freelancers and organizations to build trust and credibility.
+- **Blog/Resources Link:** Provide links to articles or resources that can help users understand how to effectively use the platform.
+- **Responsive Design:** Ensure the page is mobile-friendly, as many users may access it from their phones or tablets.
+- **Loading Indicators:** Use loading animations or skeleton screens while fetching data to enhance user experience.
+
+### Example Text for Each Section
+
+- **Featured Section:** "Meet our top freelancers and organizations who have made a mark in the freelance community. Their expertise and dedication can help bring your projects to life."
+  
+- **Freelancer Section:** "From graphic designers to software developers, our freelancers possess a diverse range of skills. Browse through their profiles to find the perfect match for your project needs."
+
+- **Organization Section:** "These organizations are actively seeking talented freelancers to collaborate on innovative projects. Explore their profiles to learn more about their work and how you can contribute."
+
+By structuring your browse page in this way, you can create an engaging and user-friendly experience that encourages users to explore and connect with freelancers and organizations on your platform.

@@ -1,0 +1,358 @@
+/* ======================================================================================================================================================================== */
+/*                                                                          Browse ( Normal )                                                                  */
+/* ======================================================================================================================================================================== */
+
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#f7f9f9;
+    font-family:"Karla",system-ui;
+}
+
+
+/* ----------------------------------------------------------------------- Search Section ----------------------------------------------------------------------- */
+
+.search-fluid{
+    height:100vh;
+    background-image: radial-gradient( circle farthest-corner at 18.7% 37.8%,  rgba(250,250,250,1) 0%, rgba(225,234,238,1) 90% );
+}
+
+
+/* ----------------------------------------------------------------------- Search Section > Title + Subtitle  ----------------------------------------------------------------------- */
+
+
+.search-fluid-title{
+    padding-top:25vh;
+}
+
+.search-fluid-title-main{
+    font-size:48px;
+    font-weight:bold;
+}
+
+.search-fluid-title-brief{
+    font-size:28px;
+    font-weight:500;
+    color:#566573;
+}
+
+
+
+/* ----------------------------------------------------------------------- Search Section > SearchBox ----------------------------------------------------------------------- */
+
+.search-box{
+    width:80%;
+    padding-bottom:10vh;
+    padding-top:10vh;
+}
+
+/* ----------------------------------------------------------------------- Search Section > SearchBox > Form ----------------------------------------------------------------------- */
+
+.search-form-group{
+    height:68px;
+}
+
+.browse-search{
+    font-size:24px;
+    background-color:#fbfcfcd4;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #1f293724;
+    height:100%;
+    color:#5464FF;
+}
+
+.browse-search:focus{
+    color:#5464FF;
+    box-shadow:none;
+    border:0.6px solid #1f293724;
+}
+
+/* ----------------------------------------------------------------------- Search Section > SearchBox > Form > SubmitBtn ----------------------------------------------------------------------- */
+
+.search-btn{
+    height:100%;
+    border-radius:10px;
+    background-color:#fbfcfcd4;
+    border:0.6px solid #1f293724;
+}
+
+.search-btn:hover{
+    background-color:#4169e1;
+}
+
+.search-btn-src{
+    transition: all 0.05s ease;
+}
+
+.search-btn:hover .search-btn-src{
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+.freelance-fluid{
+    background-color:#f7f9f9;
+}
+
+/* ----------------------------------------------------------------------- Second Section > Title + Subtitle ----------------------------------------------------------------------- */
+
+.freelance-fluid-title{
+    font-size:48px;
+    font-weight:700;
+    color:#1f2937;
+}
+
+.freelance-fluid-subtitle{
+    font-size:38px;
+    font-weight:400;
+    color: #566573;
+}
+
+/* ----------------------------------------------------------------------- Second Section > Card ----------------------------------------------------------------------- */
+
+.card{
+    background-color:#fdfefe;
+}
+
+.card-link{
+    text-decoration:none;
+}
+
+.browse-card-user-name{
+    font-size:28px;
+    font-weight:600;
+    color:#566573;
+}
+
+.dash-card-btn-specs{
+    border-radius:50px;
+    background-color:#f2f4f4;
+}
+
+.dash-card-btn-specs:hover{
+    background-color:#e5e8e8;
+}
+
+
+/* ----------------------------------------------------------------------- Second Section > Card > Technologies ----------------------------------------------------------------------- */
+
+.browse-card-btn-specs{
+    border-radius:50px;
+    background-color:#f2f4f4;
+}
+
+.browse-card-btn-specs:hover{
+    background-color:#e5e8e8;
+}
+
+.browse-card-btn-specs-num{
+    left:90%;
+    background-color:#4169e1;
+    font-size:15px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+/* ----------------------------------------------------------------------- Second Section > Card > Current + Recent Projects ----------------------------------------------------------------------- */
+
+
+.browse-card-prof-current,
+.browse-card-prof-previous{
+    width:100%;
+    border-radius:10px;
+    background-color:#f2f4f4;
+    text-align:end;
+    font-weight:500;
+}
+
+.browse-card-prof-current:hover,
+.browse-card-prof-previous:hover{
+    background-color:#e5e8e8; 
+}
+
+.browse-card-prof-current-title{
+    color:#e5e8e8;
+    top:50%;
+    left:5%;
+    transform: translateY(-50%);
+    background-color: #2c3e50;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+.org-fluid{
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+    background: linear-gradient(309deg, rgba(247,249,249,1) 0%, rgba(244,246,247,1) 100%);
+}
+
+.org-prof-side-line{
+    border-right:1px solid #e5e8e8;
+    width:40%;
+}
+
+/* ----------------------------------------------------------------------- Third Section > Recent Project ----------------------------------------------------------------------- */
+
+.browse-card-orgprof-recent{
+    width:100%;
+    border-radius:10px;
+    background-color:#f2f4f4;
+    text-align:end;
+    font-weight:500;
+    padding-left:36px;
+    padding-right:36px;
+}
+
+.browse-card-orgprof-recent:hover{
+    background-color:#e5e8e8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Browse <= 1920px ( Responsive )                                                                  */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1440px){
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+    .browse-card-user-name{
+        font-size:22px;
+    }
+
+
+    /* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+
+    .org-prof-side-line{
+        width:50%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Browse <= 1200px ( Responsive )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1199px){
+
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+    .freelance-fluid-title{
+        font-size:44px;
+    }
+    
+    .freelance-fluid-subtitle{
+        font-size:34px;
+    }
+
+    /* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+    .org-prof-side-line{
+        border:none;
+        border-bottom:1px solid #e5e8e8;
+        width:100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Browse <= 992px ( Responsive )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:992px){
+
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+
+    .freelance-fluid-title{
+        font-size:38px;
+    }
+    
+    .freelance-fluid-subtitle{
+        font-size:28px;
+    }
+
+    .browse-card-prof-current,
+    .browse-card-prof-previous{
+        font-size:22px;
+    }
+
+    .browse-card-prof-current-title{
+        left:3%;
+    }
+
+
+    /* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+
+    .browse-card-orgprof-recent{
+        font-size:20px;
+        padding-left:16px;
+        padding-right:10px;
+    }
+
+}

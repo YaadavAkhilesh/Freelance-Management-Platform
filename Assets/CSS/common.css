@@ -1,0 +1,93 @@
+/* ----------------------------------------------------------------------- Font-List ----------------------------------------------------------------------- */
+
+/*
+    Font List :
+
+    Bungee+Hairline
+    Bungee+Inline
+    Megrim
+    Nova+Flat
+    Passero+One
+    Anek+Devanagari
+    Fira+Sans
+    Karla - Main
+    Open+Sans
+    Figtree
+    Edu AU VIC WA NT Hand
+
+*/
+
+/* ----------------------------------------------------------------------- Color-List ----------------------------------------------------------------------- */
+
+/* 
+
+    Color List :
+
+    #1f2937 - black
+    #d6dbdf - border-gray
+    #4169e1 - bluebrand
+
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    /* border:1px solid #353336; */
+    cursor:url(../Graphics/cursor-blue.png),auto !important;
+}
+
+
+
+/* ----------------------------------------------------------------------- Btn Cursor ----------------------------------------------------------------------- */
+
+.btn, img{
+    cursor:url(../Graphics/cursor-blue.png),auto !important;
+}
+
+
+
+/* ----------------------------------------------------------------------- Scrollbar Modification ----------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background-color:#f2f3f4;
+}
+   
+
+::-webkit-scrollbar-thumb{
+    border-radius:2px;
+    background-color:#1f2937;
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background:#273446;
+}
+
+
+
+/* ----------------------------------------------------------------------- * Brand name ----------------------------------------------------------------------- */
+
+.brand{
+    font-style: italic;
+}
+
+
+
+/* ----------------------------------------------------------------------- Display : None - if <= 768px ----------------------------------------------------------------------- */
+
+@media (max-width:768px){
+    body{
+        display:none;
+    }
+}
+
+
+#masked-password{
+    color:#4169e1;
+}

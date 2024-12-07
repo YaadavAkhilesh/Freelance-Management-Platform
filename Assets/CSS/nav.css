@@ -1,0 +1,245 @@
+/* ======================================================================================================================================================================== */
+/*                                                                          Navbar >= 1200px ( Normal )                                                                     */
+/* ======================================================================================================================================================================== */
+
+
+/* ----------------------------------------------------------------------- Navbar <nav> Configuration Default Classes Overwrite  -----------------------------------------------------------------------*/
+
+
+.custom-navbar-dark{
+    margin-left:10vw;
+    margin-right:10vw;
+    background-color:#1f2937e6;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #2e3d53f5;
+}
+
+.custom-navbar-light{
+    margin-left:10vw;
+    margin-right:10vw;
+    /* background-color:#ebedefd4; */
+    /* background-color:#F3F2EDd4; */
+    /* background-color:#F2F2F1d4; */
+    background-color:#F2F3F4d4;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #1f293724;
+}
+
+
+.navbar-brand{
+    font-family:"Megrim",sans-serif;
+    font-weight:800;
+    font-size:38px;
+    /* color:#05e177; */
+    color:#4169e1;
+}
+
+.navbar-nav{
+    font-size:24px;
+    font-weight:500;
+    gap:30px;
+    float:right;
+    margin-left:0em;
+}
+
+.custom-navbar-dark .nav-link{
+    color:#f1f2f3;
+}
+
+.custom-navbar-light .nav-link{
+    color: #1f2937;
+}
+
+.nav-link:hover{
+    color:#4169e1;
+}
+
+.nav-item{
+    position:relative;
+}
+
+.navbar-toggler{
+    outline:none;
+    border:none;
+    color:transparent;
+}
+
+
+/* ----------------------------------------------------------------------- Navbar Menus xl + ul & xl-after Configuration -----------------------------------------------------------------------*/
+
+
+.navbar-menus-xl-after,
+.navbar-menus-xl{
+    display:flex;
+    width:100%;
+    justify-content:end;
+}
+
+.navbar-ul-2{
+    display:none;
+}
+
+
+/* ----------------------------------------------------------------------- Manual Offcanvas Configuration ( Hidden ) -----------------------------------------------------------------------*/
+
+
+.offcan{
+    display:none;
+}
+
+
+/* ----------------------------------------------------------------------- Active page dot Configuration -----------------------------------------------------------------------*/
+
+
+.aria-current-circle{
+    position:absolute;
+    top:85%;
+    left:0;
+    right:0;
+    border-radius:50%;
+    margin-left: auto;
+    margin-right: auto;
+    height:.28em;
+    width:.28em;
+    background-color:#4169e1;
+}
+
+
+/* ----------------------------------------------------------------------- User profile Configuration -----------------------------------------------------------------------*/
+
+
+.user-pro{
+    transform:translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Navbar <= 1200px ( Responsive )                                                                                */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width: 1400px) {
+
+
+    /* ----------------------------------------------------------------------- Navbar Default Classes Overwrite ( nav-link ) ----------------------------------------------------------------------- */
+
+    .custom-navbar{
+        margin-left:10vw;
+        margin-right:10vw;
+        border-radius:10px;
+    }
+
+    .nav-link{
+        padding-left:18px;
+        padding-right:18px;
+    }
+
+    .navbar-toggler-icon{
+        background-image:url(../SVG/listmenu.svg);
+        height:30px;
+        width:30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-toggler.toggled .navbar-toggler-icon {
+        background-image:url(../SVG/closemenu.svg);
+        height:25px;
+        width:25px;
+        transform: rotate(180deg);
+    }
+
+
+    /* ----------------------------------------------------------------------- Navbar Menus xl + ul & xl-after + ul Configuration ----------------------------------------------------------------------- */
+
+
+    .navbar-menus-xl{
+        display:none;
+    }
+
+    .navbar-menus-xl-after{
+        justify-content:start;
+        width:fit-content;
+    }
+
+    .navbar-ul-1{
+        padding:12px;
+        gap:10px;
+    }
+
+    .navbar-ul-2{
+        gap:10px;
+        display:flex;
+        flex-direction: row;
+    }
+
+
+    /* ----------------------------------------------------------------------- Manual Offcanvas Configuration ( Show ) -----------------------------------------------------------------------*/
+
+
+    .offcan{
+        display:none;
+        position:relative;
+        top:0;
+        width:100%;
+        height:fit-content;
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        transform: translateY(-10%);
+        animation: slideDownul 0.3s ease-out forwards;
+        transform-origin: top;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    .offcan.show{
+        display:unset;
+        transform: translateY(0);
+    }
+
+    @keyframes slideDownul {
+        0% {
+          transform:translateY(-10%);
+          opacity: 0;
+        }
+        100% {
+          transform:translateY(0%);
+          opacity: 1;
+        }
+    }
+
+
+    /* ----------------------------------------------------------------------- Manual Offcanvas Follow Us ( Show ) -----------------------------------------------------------------------*/
+
+
+    .follow-div{
+        display: flex;
+        gap:20px;
+    }
+
+    .follows-img{
+        height:38px;
+        width:38px;
+    }
+
+}

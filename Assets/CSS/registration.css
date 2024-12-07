@@ -1,0 +1,259 @@
+/* ======================================================================================================================================================================== */
+/*                                                                          Registeration ( Normal )                                                                     */
+/* ======================================================================================================================================================================== */
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family:"Karla",system-ui;
+    background-image: url(../Graphics/clean-paint-login-side.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+/* ----------------------------------------------------------------------- Register Main  -----------------------------------------------------------------------*/
+
+.regstr-fluid{
+    height:100vh;
+}
+
+.regstr-con{
+    display: flex;
+    align-items:center;
+    height:100vh;
+}
+
+.regstr-con-row{
+    padding-left:100px;
+    padding-right:100px;
+    justify-content: center;
+    width:100vw;
+}
+
+
+/* ----------------------------------------------------------------------- Register Main > card ( In view )  -----------------------------------------------------------------------*/
+
+
+.regstr-con-card{
+    background-color:#fbfcfc;
+    color:#1f2937;
+    border:1px solid #d6dbdf;
+    border-radius:10px;
+    height:85vh;
+    width:100%;
+    overflow-y:auto;
+}
+
+
+/* ----------------------------------------------------------------------- Register Main > card ( In view ) > Scroll Bar  -----------------------------------------------------------------------*/
+
+.regstr-con-card::-webkit-scrollbar {
+    width:10px;
+    display:none;
+}
+  
+.regstr-con-card::-webkit-scrollbar-track {
+    background-color:transparent;
+}
+
+.regstr-con-card::-webkit-scrollbar-thumb {
+    height:auto;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    background-color:#566573;
+}
+
+.regstr-con-card::-webkit-scrollbar-thumb:hover {
+    background:#566573;
+}
+
+
+
+/* ----------------------------------------------------------------------- Register Main > card ( In view ) > Top Bar  -----------------------------------------------------------------------*/
+
+.register-top-bar{
+    border-bottom:1px solid #d6dbdf;
+    backdrop-filter:blur(9px);
+}
+
+.register-brand{
+    text-decoration:none;
+    font-family:"Megrim",sans-serif;
+    font-size:38px;
+    font-weight:800;
+    color:#4169e1;
+}
+
+.register-title{
+    color: #2c3e50;
+    font-size:34px;
+    font-weight:500;
+}
+
+
+/* ----------------------------------------------------------------------- Register Main > card > Main PHP Register Form  -----------------------------------------------------------------------*/
+
+
+form{
+    padding-left:5vw;
+    padding-right:5vw;
+}
+
+.form-field-title{
+    font-size:24px;
+    font-weight:500;
+    color:#4d5656;
+}
+
+.form-control{
+    border:none;
+    border:1px solid #d6dbdf;
+    background-color:#f0f3f4;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:25px;
+    padding-right:25px;
+    color:#3556b9;
+    font-weight:600;
+}
+
+.form-control:focus{
+    color:#4169e1;
+    font-family:500;
+    border:1px solid #4169e1;
+    background-color:#ecf0f1;
+    box-shadow:none;
+}
+
+.form-check-input:focus{
+    box-shadow:none;
+}
+
+/* .form-check-inline{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:25px;
+    padding-right:25px;
+} */
+
+
+/* ----------------------------------------------------------------------- Register Main > card > Main PHP Register Form > Multiple Section  -----------------------------------------------------------------------*/
+
+
+.register-form-inline-field-row{
+    justify-content:start;
+    gap:1vw;
+    align-items:center;
+    position:relative;
+    padding:30px;
+    border-radius:10px;
+    border:1px solid #d6dbdf;
+}
+
+.register-form-inline-field-row-title{
+    position:absolute;
+    left:178px;
+    color: #4169e1;
+    background-color:#fbfcfc;
+}
+
+.passiconwrap{
+    position: relative;
+}
+
+
+
+/* ----------------------------------------------------------------------- Register Main > card > Main PHP Register Form > Hidden Section on Select View  -----------------------------------------------------------------------*/
+
+.hidden{
+    display:none;
+}
+
+
+/* ----------------------------------------------------------------------- Register Main > card > Main PHP Register Form > All Error  -----------------------------------------------------------------------*/
+
+
+.error{
+    margin:0;
+    margin-top:5px;
+    margin-bottom:5px;
+    color:#ff6a31;
+}
+
+
+/* ----------------------------------------------------------------------- Register Main > card > Main PHP Register Form > All btn + Link  -----------------------------------------------------------------------*/
+
+
+#toggle-password-icon-reenter,
+#toggle-password-icon{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+#eye-open-icon,
+#eye-open-icon-reenter,
+#eye-close-icon-reenter,
+#eye-close-icon{
+    display:block;
+    height:30px;
+    width:30px;
+}
+
+#eye-open-icon-reenter,
+#eye-open-icon{
+    display: none;
+}
+
+.login-in-link{
+    text-decoration:none;
+}
+
+.btn-register{
+    font-size:24px;
+    background-color:#4169e1;
+    color:#fbfcfc;
+}
+
+.btn-register:hover{
+    background-color:#3b60ce;
+    color:#fbfcfc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Registeration ( Responsive <= 992px )                                                           */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:992px) {
+    
+    .register-form-inline-field-row{
+        gap:1vw;
+        padding:20px;
+    }
+
+    .form-field-title{
+        font-size:20px;
+    }
+
+}

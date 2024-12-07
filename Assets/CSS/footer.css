@@ -1,0 +1,218 @@
+/* ======================================================================================================================================================================== */
+/*                                                                          Index >= 1920px ( Normal )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+/* ----------------------------------------------------------------------- footer-fluid ----------------------------------------------------------------------- */
+
+.footer-fluid{
+    /* background-image:url(../Graphics/whitemini.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size:cover; */
+    background-color:transparent;
+}
+
+.custom-footer-light{
+    margin-left:1vw;
+    margin-right:1vw;
+    /* background-color:#ebedefd4; */
+    /* background-color:#F3F2EDd4; */
+    /* background-color:#F2F2F1d4; */
+    background-color:#F2F3F4d4;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #1f293724;
+}
+
+/* ----------------------------------------------------------------------- Footer brand + Newsteller ----------------------------------------------------------------------- */
+
+.footer-brand{
+    font-size:3em;
+}
+
+.footer-brand-con{
+    margin-left:18px;
+    margin-right:18px;
+}
+
+.footer-about-brand{
+    font-style: italic;
+    color:#566573;
+    font-size:24px;
+    font-weight:700;
+}
+
+.sub-news-input:focus{
+    font-weight:600;
+    color:#4169E1;
+    border:1px solid #566573;
+    box-shadow:none;
+}
+
+.btn-newstell{
+    background-color:#1f2937;
+    color:#F2F3F4;
+}
+
+.btn-newstell:hover{
+    background-color:#4169E1;
+    color:#F2F3F4;
+}
+
+
+/* ----------------------------------------------------------------------- Footer Nav + Menu ----------------------------------------------------------------------- */
+
+.footer-nav-menu{
+    justify-content:space-between;
+}
+
+.footer-nav-con-title{
+    color:#1f2937;
+    font-size:24px;
+    font-weight:700;
+}
+
+.footer-head-under{
+    margin-top:6px;
+    width:50%;
+    height:4px;
+    border-radius:10px;
+    background-color:#4169E1;
+}
+
+
+/* ----------------------------------------------------------------------- Copyright Fluid ----------------------------------------------------------------------- */
+
+
+.copyright-fluid{
+    margin-left:1vw;
+    margin-right:1vw;
+    /* background-color:#ebedefd4; */
+    /* background-color:#F3F2EDd4; */
+    /* background-color:#F2F2F1d4; */
+    background-color:#F2F3F4d4;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #1f293724;
+    justify-content: space-between;
+}
+
+.copyright-text{
+    margin-left:30px;
+    font-size:28px;
+    color: #566573;
+}
+
+.copyright-logo{
+    position:absolute;
+    height:20%;
+    top:40%;
+    bottom:40%;
+}
+
+.help-num{
+    font-size:28px;
+    color: #566573;
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 1440px ( Responsive )                                                                  */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1440px){
+
+    /* ----------------------------------------------------------------------- Footer brand ----------------------------------------------------------------------- */
+
+    .footer-brand-con{
+        display: block;
+        margin:0 auto;
+    }
+
+    .footer-brand{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:fit-content;
+    }
+
+
+    /* ----------------------------------------------------------------------- Footer Nav + Menu ----------------------------------------------------------------------- */
+
+    .footer-nav-menu{
+        display:block;
+        margin-top:36px;
+    }
+
+    .footer-follow-ul{
+        float:left;
+    }
+
+    /* ----------------------------------------------------------------------- Copyright Fluid ----------------------------------------------------------------------- */
+
+    .copyright-text{
+        font-size:24px;
+    }
+
+    .help-num{
+        font-size:24px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 1024px ( Responsive )                                                                  */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1024px){
+
+
+    /* ----------------------------------------------------------------------- Copyright Fluid ----------------------------------------------------------------------- */
+
+    .copyright-text{
+        font-size:22px;
+    }
+
+    .help-num{
+        font-size:22px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:992px){
+
+    .copyright-text{
+        font-size:20px;
+    }
+
+    .help-num{
+        font-size:20px;
+    }
+
+}

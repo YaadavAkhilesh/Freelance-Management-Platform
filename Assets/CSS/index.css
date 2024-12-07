@@ -1,0 +1,755 @@
+/* ======================================================================================================================================================================== */
+/*                                                                          Index >= 1200px ( Normal )                                                                      */
+/* ======================================================================================================================================================================== */
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#f7f9f9;
+    font-family:"Karla",system-ui;
+}
+
+/* ----------------------------------------------------------------------- First Section ----------------------------------------------------------------------- */
+
+
+.intro-container{
+    height:100vh;
+    display:flex;
+    --dot-bg: #f8f9f9;
+    --dot-color: #adbcd1;
+    --dot-size: 2px;
+    --dot-space: 80px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+    background-attachment: fixed;
+    justify-content:space-between;
+}
+
+.intro-con-div{
+    height:fit-content;
+    width:45vw;
+    margin-top:30vh;
+    margin-left:72px;
+    margin-right:72px;
+}
+
+
+/* ----------------------------------- First Section > Textual Content ----------------------------------- */
+
+.intro-div-text{
+    font-family:"Megrim",sans-serif;
+    color:#1f2937;
+    font-style: italic;
+    font-size:58px;
+    font-weight:700;
+}
+
+.intro-div-text-span{
+    font-size:48px;
+    font-weight:600;
+    color:#34495e;
+}
+
+.intro-div-text-brief{
+    color:#1b2631;
+    text-align:justify;
+    font-size:24px;
+    font-weight:400;
+}
+
+
+
+/* ----------------------------------- First Section > Background SVGs ----------------------------------- */
+
+.intro-con-back-img{
+    margin:0;
+    padding:0;
+    background-image:url(../SVG/freelancerworld.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:55vw;
+    height:100vh;
+}
+
+
+
+/* ----------------------------------- First Section > Let's Start btn ----------------------------------- */
+
+.btn-getstart{
+    font-size:24px;
+    color:#f4f6f7;
+    background-color:#1f2937;
+}
+
+.btn-getstart:hover{
+    color:#f4f6f7;
+    background-color:#4169e1;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+.userbase-main{
+    /* background-color: #eaeded; */
+    /* background-color:#f4f6f7; */
+    background-image:url(../Graphics/freelancing-desk10.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+.userbase-con{
+    margin-left:auto;
+    margin-right:5vw;
+    margin-top:50px;
+}
+
+.userbase-num-con{
+    display:flex;
+    gap:50px;
+    background-color:#1b2631;
+    border-radius:38px;
+}
+
+/* ----------------------------------- Second Section > Textual Content ----------------------------------- */
+
+.userbase-title{
+    color:#4f6a8e;
+    font-size:54px;
+}
+
+.userbase-text{
+    padding:30px;
+    color:#f4f6f7;
+    font-size:30px;
+    font-weight:700;
+}
+
+.userbase-text-num{
+    background-image: linear-gradient(to right, #4169e1 , #05e177);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-size:48px;
+    font-weight:700;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+.feature-fluid{
+    /* background-image:url(../Graphics/whitemini.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover; */
+    background-color:#f7f9f9;
+}
+
+
+/* ----------------------------------- Third Section > Textual Content ----------------------------------- */
+
+.features-con-title{
+    color:#4f6a8e;
+    font-size:54px;
+    font-weight:500;
+}
+
+.feature-div-con{
+    display:flex;
+}
+
+.feature-div-title{
+    background-color:#f0f3f4;
+    border:1px solid #d6dbdf;
+    border-radius:5px;
+    width:fit-content;
+    font-size:34px;
+    font-weight:600;
+    color: #1f2937;
+}
+
+.feature-div-brief{
+    font-size:24px;
+    font-weight:500;
+}
+
+
+
+/* ----------------------------------- Third Section > SVGs + Animation ----------------------------------- */
+
+.features-span-img{
+    height:90px;
+    width:90px;
+    display: block;
+    border-radius:10px;
+    box-shadow: 3px 3px 5px #d6dbdf;
+    background-color:#f0f0f0;
+}
+
+.features-span-img-src{
+    height:100%;
+    width:100%;
+}
+
+.animate-btn-1,
+.animate-btn-3{
+    opacity:0;
+    transform:translateX(5vw);
+}
+
+.animate-btn-2{
+    opacity:0;
+    transform:translateX(-5vw);
+}
+
+.animate-btn-1.active,
+.animate-btn-3.active{
+    animation: fadeInRight 1s ease-in-out forwards;
+}
+
+.animate-btn-2.active{
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.animate-btn-1,
+.animate-btn-2,
+.animate-btn-3
+:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+.animate-btn-1,
+.animate-btn-2,
+.animate-btn-3:nth-child(2) {
+    animation-delay: .5s;
+}
+  
+@keyframes fadeInRight {
+    0% {
+      opacity:0;
+      transform: translateX(5vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+        opacity:0;
+        transform: translateX(-5vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 1920px ( Responsive )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1920px){
+
+
+    /* ----------------------------------------------------------------------- First Section ----------------------------------------------------------------------- */
+
+    .intro-container{
+        display:inline-block;
+        height:fit-content;
+    }
+    .intro-con-div{
+        margin-top:20vh;
+        width:80vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ----------------------------------- First Section > Background SVGs ----------------------------------- */
+
+    .intro-con-back-img{
+        width:80vw;
+        background-size: contain;
+        height:70vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+    .userbase-con{
+        margin:0;
+        width:65vw;
+        margin-left:auto;
+        margin-right:5vw;
+        margin-top:36px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 1440px ( Responsive )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1440px){
+
+
+    /* ----------------------------------------------------------------------- First Section ----------------------------------------------------------------------- */
+
+    .intro-container{
+        display:inline-block;
+        height:fit-content;
+    }
+    .intro-con-div{
+        margin-top:20vh;
+        width:80vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    /* ----------------------------------- First Section > Textual Content ----------------------------------- */
+
+    .intro-div-text{
+        font-size:46px;
+    }
+    
+    .intro-div-text-span{
+        font-size:42px;
+    }
+    
+    .intro-div-text-brief{
+        font-size:24px;
+    }
+
+
+    /* ----------------------------------- First Section > Background SVGs ----------------------------------- */
+
+    .intro-con-back-img{
+        width:80vw;
+        background-size: contain;
+        height:70vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ----------------------------------- First Section > Let's Start btn ----------------------------------- */
+
+    .btn-getstart{
+        font-size:24px;
+    }
+
+
+
+
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+    .userbase-main{
+        background-position:right;
+    }
+
+    .userbase-con{
+        width:70vw;
+        margin-left:auto;
+        margin-right:36px;
+        margin-top:36px;
+    }
+
+    .userbase-num-con{
+        gap:20px;
+        border-radius:38px;
+    }
+
+
+    /* ----------------------------------- Second Section > Textual Content ----------------------------------- */
+
+    .userbase-title{
+        font-size:44px;
+    }
+    
+    .userbase-text{
+        padding:20px;
+        font-size:28px;
+    }
+    
+    .userbase-text-num{
+        font-size:34px;
+    }
+
+
+
+
+
+    /* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+
+    .feature-fluid{
+        background-position:center;
+    }
+
+    .features-con{
+        width:85vw;
+    }
+
+    /* ----------------------------------- Third Section > Textual Content ----------------------------------- */
+
+    .features-con-title{
+        font-size:44px;
+    }
+    
+    .feature-div-title{
+        font-size:36px;
+    }
+    .feature-div-brief{
+        font-size:24px;
+        width:45%;
+    }
+    
+
+    /* ----------------------------------- Third Section > SVGs ----------------------------------- */
+    
+    .features-span-img{
+        height:75px;
+        width:75px;
+    }
+    
+    .features-span-img-src{
+        height:100%;
+        width:100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 1280px ( Responsive )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1280px){
+
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+    .userbase-con{
+        margin:0;
+        width:75vw;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:36px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 1024px ( Responsive )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1024px){
+
+
+    /* ----------------------------------------------------------------------- First Section ----------------------------------------------------------------------- */
+
+    .intro-container{
+        display:inline-block;
+        height:fit-content;
+    }
+    .intro-con-div{
+        margin-top:15vh;
+        width:80vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    /* ----------------------------------- First Section > Textual Content ----------------------------------- */
+
+    .intro-div-text{
+        font-size:44px;
+    }
+    
+    .intro-div-text-span{
+        font-size:40px;
+    }
+    
+    .intro-div-text-brief{
+        font-size:22px;
+    }
+
+
+    /* ----------------------------------- First Section > Background SVGs ----------------------------------- */
+
+    .intro-con-back-img{
+        width:80vw;
+        background-size: contain;
+        height:80vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ----------------------------------- First Section > Let's Start btn ----------------------------------- */
+
+    .btn-getstart{
+        font-size:22px;
+    }
+
+
+
+
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+    .userbase-main{
+        background-position:right;
+    }
+
+    .userbase-con{
+        margin:0;
+        width:80vw;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:36px;
+    }
+
+    .userbase-num-con{
+        gap:20px;
+        border-radius:38px;
+    }
+
+
+    /* ----------------------------------- Second Section > Textual Content ----------------------------------- */
+
+    .userbase-title{
+        font-size:44px;
+    }
+    
+    .userbase-text{
+        padding:20px;
+        font-size:26px;
+    }
+    
+    .userbase-text-num{
+        font-size:34px;
+    }
+
+
+
+
+
+    /* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+    .features-con{
+        width:85vw;
+    }
+
+    /* ----------------------------------- Third Section > Textual Content ----------------------------------- */
+
+    .features-con-title{
+        font-size:44px;
+    }
+    
+    .feature-div-title{
+        font-size:36px;
+    }
+    .feature-div-brief{
+        font-size:24px;
+    }
+    
+
+    /* ----------------------------------- Third Section > SVGs ----------------------------------- */
+    
+    .features-span-img{
+        height:65px;
+        width:65px;
+    }
+    
+    .features-span-img-src{
+        height:100%;
+        width:100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 992px ( Responsive )                                                                      */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:992px){
+
+
+    /* ----------------------------------------------------------------------- First Section ----------------------------------------------------------------------- */
+
+    .intro-container{
+        display:inline-block;
+        height:fit-content;
+    }
+    .intro-con-div{
+        margin-top:15vh;
+        width:100vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    /* ----------------------------------- First Section > Textual Content ----------------------------------- */
+
+    .intro-div-text{
+        font-size:42px;
+    }
+    
+    .intro-div-text-span{
+        font-size:38px;
+    }
+    
+    .intro-div-text-brief{
+        font-size:20px;
+    }
+
+
+    /* ----------------------------------- First Section > Background SVGs ----------------------------------- */
+
+    .intro-con-back-img{
+        background-size: contain;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ----------------------------------- First Section > Let's Start btn ----------------------------------- */
+
+    .btn-getstart{
+        font-size:20px;
+    }
+
+
+
+
+
+    /* ----------------------------------------------------------------------- Second Section ----------------------------------------------------------------------- */
+
+    .userbase-main{
+        background-position:right;
+    }
+
+    .userbase-con{
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:36px;
+    }
+
+    .userbase-num-con{
+        gap:15px;
+        border-radius:32px;
+    }
+
+
+    /* ----------------------------------- Second Section > Textual Content ----------------------------------- */
+
+    .userbase-title{
+        font-size:42px;
+    }
+    
+    .userbase-text{
+        padding:15px;
+        font-size:24px;
+    }
+    
+    .userbase-text-num{
+        font-size:32px;
+    }
+
+
+
+
+
+    /* ----------------------------------------------------------------------- Third Section ----------------------------------------------------------------------- */
+
+    /* ----------------------------------- Third Section > Textual Content ----------------------------------- */
+
+    .features-con-title{
+        font-size:42px;
+    }
+    
+    .feature-div-title{
+        font-size:34px;
+    }
+    .feature-div-brief{
+        font-size:22px;
+    }
+    
+
+    /* ----------------------------------- Third Section > SVGs ----------------------------------- */
+    
+    .features-span-img{
+        height:65px;
+        width:65px;
+    }
+    
+    .features-span-img-src{
+        height:100%;
+        width:100%;
+    }
+
+}

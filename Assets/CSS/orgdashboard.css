@@ -1,0 +1,580 @@
+/* ======================================================================================================================================================================== */
+/*                                                                          Dashboard ( Normal )                                                                            */
+/* ======================================================================================================================================================================== */
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family:"Karla",system-ui;
+    background-image: url(../Graphics/freelancer-desk4.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Navbar ----------------------------------------------------------------------- */
+
+.dashbar-main{
+    width:55vw;
+    margin:0 auto;
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Navbar > Username + Noti + Profile ----------------------------------------------------------------------- */
+
+.dashnav-top{
+    width:100%;
+    background-color:#fdfefed4;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #1f293724;
+}
+
+.dashnav-user{
+    text-decoration:none;
+    font-weight:500;
+    font-size:32px;
+    color:#4d5656;
+}
+
+.user-pro{
+    transform:translateY(-2px);
+}
+
+.nav-link{
+    color: #1f2937;
+}
+
+.nav-link:hover{
+    color:#4169e1;
+}
+
+.nav-item{
+    position:relative;
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Navbar > Offcan Toggler ----------------------------------------------------------------------- */
+
+.navbar-toggler{
+    outline:none;
+    border:none;
+    color:transparent;
+}
+
+.navbar-toggler-icon{
+    background-image:url(../SVG/listmenu.svg);
+    height:30px;
+    width:30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar-toggler.toggled .navbar-toggler-icon {
+    background-image:url(../SVG/closemenu.svg);
+    height:25px;
+    width:25px;
+    transform: rotate(180deg);
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Navbar > Offcan Toggler btn + Home Btn ----------------------------------------------------------------------- */
+
+
+.dashnav-top-btns{
+    width:auto;
+    background-color:#fdfefed4;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #1f293724;   
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- Dashboard Offcanvas ----------------------------------------------------------------------- */
+
+
+.cust-dashoffcan{
+    background-color:#fdfefeee;
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    border:0.6px solid #1f293724;
+    min-width:264px;
+    max-width:300px;
+}
+
+.offcanvas-footer{
+    background-color:#f8f9f9;
+    border-top:0.6px solid #1f293724;
+    display: none !important;
+}
+
+.offcanvas-header{
+    border-top-left-radius:inherit;
+    border-top-right-radius:inherit;
+    background-color:#f8f9f9;
+    border-bottom:0.6px solid #1f293724;
+}
+
+
+
+
+/* ----------------------------------------------------------------------- Dashboard Offcanvas > List items ( BTN ) ----------------------------------------------------------------------- */
+
+
+.btn-nav-items{
+    background-color:#f7f9f9;
+}
+
+.btn-nav-items:hover{
+    background-color:#f4f6f7;
+}
+
+.btn-nav-items.active {
+    border: 0.5px solid #1f293724;
+    background-color:#f0f3f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- Dashboard Main ----------------------------------------------------------------------- */
+
+
+.dash-main-fluid{
+    height:100vh;
+    background-color:#fdfefea1;
+    backdrop-filter:blur(10px);
+    overflow:scroll;
+}
+
+.dash-main-fluid::-webkit-scrollbar{
+    display:none;
+}
+
+.dashdet-con{
+    display: flex;
+    align-items:center;
+    height:100vh;
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Main > All Row Specs Wise Hidden ----------------------------------------------------------------------- */
+
+.dash-def-profile,
+.dash-identity,
+.dash-contact,
+.dash-project,
+.dash-company{
+    height:100vh;
+    width:100vw;
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Main > All Row Specs Wise Hidden  > Card ----------------------------------------------------------------------- */
+
+.card{
+    max-height:100%;
+    background-color:#fdfefeed;
+    backdrop-filter:blur(10px);
+}
+
+.allprjs{
+    overflow-x: scroll;
+}
+
+.allprjs::-webkit-scrollbar{
+    display: none;
+}
+
+.dash-personal-cur-hed{
+    font-size:20px !important;
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Main > All Row Specs Wise Hidden > Crad > Current Details [ Field + Value ] ----------------------------------------------------------------------- */
+
+.card-field,
+.card-field-val{
+    border-radius:5px;
+}
+
+.card-field{
+    background-color:#f2f4f4;
+    color:#2c3e50;
+    font-weight:500;
+}
+
+.card-field-val{
+    width:60%;
+    background-color:#f8f9f9;
+    color:#424949;
+}
+
+#toggle-password-icon-ui{
+    position: absolute;
+    right:5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#eye-open-icon-ui,
+#eye-close-icon-ui{
+    display:block;
+    height:30px;
+    width:30px;
+}
+
+#eye-open-icon-ui{
+    display: none;
+}
+
+
+
+/* ----------------------------------------------------------------------- Dashboard Main > All Row Specs Wise Hidden > Edit Btn + Save Btn  ----------------------------------------------------------------------- */
+
+.btn-edit,
+.btn-save {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.btn-edit{
+    background-color:#ffd8be;
+    border:1px solid #dfc8b1;
+}
+
+.btn-edit:hover{
+    background-color:#58d68d;
+}
+
+.btn-save{
+    background-color:#4267b2;
+    border:1px solid #4169e1;
+    color:#f8f9f9;
+}
+
+.btn-save:hover{
+    background-color:#e74c3c;
+    color: #f7f9f9;
+}
+
+
+
+/* ----------------------------------------------------------------------- Dashboard Main > All Row Specs Wise Hidden > Hidden Forms  + Error ----------------------------------------------------------------------- */
+
+
+
+.hidden-form{
+    display:none;
+}
+
+.form-field-title{
+    font-size:24px;
+    font-weight:500;
+    color:#4d5656;
+}
+
+.form-control{
+    border:none;
+    border:1px solid #d6dbdf;
+    background-color:#f0f3f4;
+    padding:15px 25px;
+}
+
+.form-control:focus{
+    color:#4169e1;
+    border:1px solid #4169e1;
+    background-color:#ecf0f1;
+    box-shadow:none;
+}
+
+.form-check-input:focus{
+    box-shadow:none;
+}
+
+.error{
+    margin:5px 0;
+    color:#ff6a31;
+}
+
+
+/* ----------------------------------------------------------------------- Dashboard Main > All Row Specs Wise Hidden > Hidden Forms  + Error> Password Eye Toggle ----------------------------------------------------------------------- */
+
+
+
+.passiconwrap{
+    position: relative;
+}
+
+#toggle-password-icon-reenter,
+#toggle-password-icon{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#eye-open-icon,
+#eye-open-icon-reenter,
+#eye-close-icon-reenter,
+#eye-close-icon{
+    display:block;
+    height:30px;
+    width:30px;
+}
+
+#eye-open-icon-reenter,
+#eye-open-icon{
+    display: none;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- Dashboard Default Main All In One Profile ----------------------------------------------------------------------- */
+
+
+.dash-def-profile-card{
+    height:100vh;
+    background-color:#fdfefe;
+    overflow-y: scroll;
+}
+
+.dash-def-profile-card::-webkit-scrollbar{
+    display:none;
+}
+
+.dash-def-profile-card-bdy{
+    padding-top:15vh;
+}
+
+
+/* ----------------------------------------------------------------------- Main Profile > Username ----------------------------------------------------------------------- */
+
+.dash-card-user-name{
+    font-size:28px;
+    font-weight:600;
+    color:#566573;
+}
+
+.card-link{
+    text-decoration:none;
+    font-size:24px;
+}
+
+
+/* ----------------------------------------------------------------------- Main Profile > Techno + Field + Language Specs ----------------------------------------------------------------------- */
+
+.dash-card-btn-specs{
+    border-radius:50px;
+    background-color:#f2f4f4;
+}
+
+.dash-card-btn-specs:hover{
+    background-color:#e5e8e8;
+}
+
+
+/* ----------------------------------------------------------------------- Main Profile > Current mini + Previous ( Projects ) + Experience ----------------------------------------------------------------------- */
+
+
+.dash-card-prof-current,
+.dash-card-prof-previous{
+    border-radius:10px;
+    background-color:#f2f4f4;
+    text-align:end;
+    font-weight:500;
+}
+
+.dash-card-prof-current:hover,
+.dash-card-prof-previous:hover{
+    background-color:#e5e8e8; 
+}
+
+.dash-card-prof-current-title{
+    color:#e5e8e8;
+    top:50%;
+    left:5%;
+    transform: translateY(-50%);
+    background-color: #2c3e50;
+}
+
+
+
+/* ----------------------------------------------------------------------- Main Profile > Current Big Card ----------------------------------------------------------------------- */
+
+
+/* ------------------------------------ Main Profile > Current Big Card > Title ------------------------------------ */
+
+.card-header{
+    font-size:32px;
+    font-weight:500;
+    color:#1f2937;
+}
+
+/* ------------------------------------ Main Profile > Current Big Card > Description ------------------------------------ */
+
+.project-disc{
+    font-size:24px;
+    font-weight:500;
+    color: #566573;
+}
+
+
+/* ----------------------------------------------------------------------- Main Profile > Current Big Card > Client ( ORG ) Name ----------------------------------------------------------------------- */
+
+.projects-card-org-name{
+    font-size:28px;
+    font-weight:600;
+    color:#566573;
+}
+
+
+/* ----------------------------------------------------------------------- Main Profile > Current Big Card > Requirements Btns ----------------------------------------------------------------------- */
+
+.projects-card-btn-req{
+    border-radius:50px;
+    background-color:#f2f4f4;
+}
+
+.projects-card-btn-req:hover{
+    background-color:#e5e8e8;
+}
+
+
+
+/* ----------------------------------------------------------------------- Main Profile > Current Big Card > Bided Value + Let's Bid Btns ----------------------------------------------------------------------- */
+
+
+.bid-val{
+    background-color:#2c3e50;
+    color:#dfe9f3;
+    font-size:25px;
+    font-weight:600;
+}
+
+.bid-val:hover{
+    color:#dfe9f3;
+    background-color:#1f2b38;
+}
+
+
+
+/* ----------------------------------------------------------------------- Main Profile > Current Big Card > Timeline ----------------------------------------------------------------------- */
+
+
+.projects-card-min-time,
+.projects-card-max-time{
+    width:95%;
+    border-radius:10px;
+    background-color:#f2f4f4;
+    text-align:end;
+    font-weight:500;
+}
+
+.projects-card-min-time:hover,
+.projects-card-max-time:hover{
+    background-color:#e5e8e8; 
+}
+
+.projects-card-time-title{
+    color:#e5e8e8;
+    top:50%;
+    left:5%;
+    transform: translateY(-50%);
+    background-color: #2c3e50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================================================================== */
+/*                                                                          Index <= 1440px ( Responsive )                                                                  */
+/* ======================================================================================================================================================================== */
+
+
+@media (max-width:1440px) {
+
+    .dash-def-profile-card-bdy{
+        padding-top:5vh;
+    }
+
+    .dashbar-main{
+        width:fit-content;
+        margin:0;
+        justify-self: end;
+    }
+
+    .dashnav-top{
+        display:none;
+    }
+
+    .dashnav-home{
+        display:none;
+    }
+    
+    .dashnav-user{
+        font-size:28px;
+    }
+
+    .offcanvas-footer{
+        display:flex !important;
+    }
+
+    .card-field{
+        width:40%;
+    }
+
+    .card-field-val{
+        width:60%;
+    }
+    
+}

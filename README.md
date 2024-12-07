@@ -1,1 +1,3 @@
+## Freelance Management Platform (FrelaxPro)
+
 The Freelance Management Platform (FrelaxPro) is a web-based application designed to facilitate project posting, bidding, and management for freelancers and clients. It allows users to register, create profiles, post projects, place bids, and manage ongoing projects efficiently. The platform aims to streamline the process of connecting clients with skilled freelancers while providing a user-friendly and intuitive interface.
